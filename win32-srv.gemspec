@@ -3,12 +3,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "win32/windows/version"
 
 Gem::Specification.new do |spec|
-  spec.name       = "win32-service"
+  spec.name       = "win32-srv"
   spec.version    = Win32::Service::VERSION
-  spec.authors    = ["Daniel J. Berger", "Park Heesob"]
-  spec.license    = "Artistic-2.0"
-  spec.email      = "djberg96@gmail.com"
-  spec.homepage   = "https://github.com/chef/win32-service"
+  spec.authors    = ["Gernot Gradwohl"]
+  spec.license    = "MIT"
+  spec.email      = "grnt.grdwhl@gmail.com"
+  spec.homepage   = "https://github.com/choallin/win32-service"
   spec.summary    = "An interface for MS Windows services"
 
   spec.files         = Dir["LICENSE", "lib/**/*"]
@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency("win32-security")
 
   spec.description = <<-EOF
-    The win32-service library provides a Ruby interface to services on
+    The win32-srv library provides a Ruby interface to services on
     MS Windows. You can create new services, or control, configure and
     inspect existing services.
 
